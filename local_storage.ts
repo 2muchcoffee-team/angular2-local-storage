@@ -1,5 +1,3 @@
-import {provide} from '@angular/core';
-
 export class LocalStorage {
     public localStorage:any;
 
@@ -32,5 +30,5 @@ export class LocalStorage {
 }
 
 export const LOCAL_STORAGE_PROVIDERS:any[] = [
-    provide(LocalStorage, {useClass: LocalStorage})
+   {provide: LocalStorage, useClass: LocalStorage},
 ];
